@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter valid email address" required><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter valid password" required><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male" style="display:inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female" style="display:inline;">Female</label><br>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course"><br>
+        <option value="">Select Course Name</option><br>
+        <option value="BTech">B.Tech</option><br>
+        <option value="BSc">B.Sc</option><br>
+        <option value="BA">B.A</option><br>
+        <option value="MBA">MBA</option><br>
+      </select>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea><br>
+
+      <div class="buttons">
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+    <footer>© 2025 Student Registration Portal</footer>
+  </div>
+</body>
+</html>

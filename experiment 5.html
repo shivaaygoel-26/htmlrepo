@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Hotel Room Booking Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      border: 2px solid black;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+    }
+    h2 {
+      text-align: center;
+      font-family: Georgia, serif;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-top: 8px;
+    }
+    input, select, textarea {
+      width: 220px;
+      padding: 4px;
+      margin-top: 5px;
+    }
+    textarea {
+      height: 60px;
+      resize: none;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 15px;
+    }
+    input[type="submit"], input[type="reset"] {
+      width: 100px;
+      margin: 5px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hotel Room Booking Form</h2>
+
+  <form>
+    <label>Full Name:</label>
+    <input type="text" name="fullname"><br>
+
+    <label>Email:</label>
+    <input type="email" name="email"><br>
+
+    <label>Phone:</label>
+    <input type="tel" name="phone"><br>
+
+    <label>Check-in Date:</label>
+    <input type="date" name="checkin"><br>
+
+    <label>Check-out Date:</label>
+    <input type="date" name="checkout"><br>
+
+    <label>Room Type:</label>
+    <select name="roomtype">
+      <option>Single Room</option>
+      <option>Double Room</option>
+      <option>Suite</option>
+    </select><br>
+
+    <label>Number of Guests:</label>
+    <input type="number" name="guests" min="1"><br>
+
+    <label>Special Requests:</label><br>
+    <textarea name="requests"></textarea><br>
+
+    <div class="buttons">
+      <input type="submit" value="Book Now">
+      <input type="reset" value="Reset Form">
+    </div>
+  </form>
+
+</body>
+</html>
